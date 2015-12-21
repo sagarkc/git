@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="soiPortal" style="background-color: #ffffff">
+
+<head>
+<link rel="shortcut icon" href="image/tab-Image/ericsson-logo-Fm.png"
+	type="image/png">
+<title>Service On Integrator</title>
+<meta charset="utf-8" />
+
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+.jumbotron {
+	height: 100vh;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Height of the footer */ . center { float : none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+</style>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<div id="wrapper">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+			<div id="footer">
+			<!--  <div class="container text-center">
+			 class="text-muted credit" style="color:#fff">xyz</p>> -->
+				<div>
+					<img src="image/tab-Image/color-line.png"
+						style="width: 1270px; height: 2px;">
+				</div>				
+				<div class="container text-center">
+				<img src="modules/home-Dashboard/images/soi1.png"
+					alt="Home-Dashboard" style="width: 32px; height: 28px;">					
+				<p2 class="text-muted credit" style="color:#fff"> <font color="#000066">SOI Portal Copyright © 2015. Ericsson. All Rights Reserved.
+				<span class="pull"> <a href="">Privacy</a> | <a href="">Disclaimer</a>
+				</span></font></p2>
+			</div>
+		</footer>
+	</div>
+
+	<script src="browser_components/jquery/jquery-1.11.3.min.js"></script>
+	<script src="browser_components/angular/angular.js"></script>
+	<script src="browser_components/angular/angular-route.js"></script>
+	<script src="browser_components/angular/angular.min.js"></script>
+	<script src="browser_components/angular/angular-route.min.js"></script>
+	<script src="browser_components/angular/angular-cookies.js"></script>
+	<script src="app.js"></script>
+	<script src="modules/login/js/login-services.js"></script>
+	<script src="modules/login/js/login-controller.js"></script>
+	<script src="modules/home-Dashboard/js/home-controller.js"></script>
+	<script src="modules/userAdmin/js/userAdmin-controller.js"></script>
+</body>
+
+</html>

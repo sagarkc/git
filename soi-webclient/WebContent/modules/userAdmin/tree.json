@@ -1,0 +1,7 @@
+[{ "label":"All Users"},
+{ "label":"Backup Administrators" },
+{ "label":"Super Users" },
+{ "label":"System Administrators" },
+{ "label":"Telco Administrators" },
+{ "label":"Telco Operators" },
+{ "label":"User Administrators" }]

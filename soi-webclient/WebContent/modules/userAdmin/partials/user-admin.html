@@ -1,0 +1,78 @@
+<div id="admin" ng-show="view">
+	<div ng-include="getInclude()"></div>
+</div>
+<body ng-app="soiPortal" ng-controller="UserAdminController">
+	<div style="width: 100%;">
+		<div style="float: left; width: 40%;">
+		
+		<div id="sidebar" ng-show="sidebarview">
+			<div ng-include="getSidebar()"></div>
+		</div>
+		
+			<!-- <div class="container" style="margin-top: 30px;">
+				<div class="row">
+					<div class="col-md-12">
+						<ul id="tree1">
+							<li><a>ROLES</a>
+								<ul>
+									<li ng-repeat="role in roles"><a
+										href="#/userAdmin/allUsers" target="myIframe">{{role.label}}</a>
+								</ul></li>
+								
+
+							<li><a>USERS</a>
+								<ul>
+									<li ng-repeat="user in users">{{user.label}}
+								</ul>
+						</ul>
+
+					</div>
+
+
+					<ul id="tree1">
+							<li><a>ROLES</a>
+
+								<ul>	
+									<li><a href="#/userAdmin/allUsers" target="myIframe">All Users</a></li>					
+									<li><a href="#/userAdmin/allUsers" ng-click='go()' ;>All Users</a></li>								
+									<li><a href="#/userAdmin/backupAdmin" target="myIframe">Backup Administrators</a></li>
+									<li>Super Users</li>
+									<li>System Administrators</li>
+									<li>Telco Administrators</li>
+									<li>Telco Operators</li>
+									<li>User Administrators</li>
+								</ul></li>
+							<li>USERS
+								<ul>
+									<li>admin</li>
+									<li>esagark</li>
+									<li>edivark</li>
+									<li>emanmra</li>
+								</ul>
+							</li>
+						</ul>
+				</div>
+
+			</div> -->
+		</div>
+	</div>
+	</div>
+	<!-- <div style="float: right; width: 58%;">
+		<iframe src="#/userAdmin/*" name="myIframe" frameborder="0" border="0"
+			margin-top="0" cellspacing="0" scrolling="auto"
+			style="border-style: none; width: 600px; height: 400px;"></iframe>
+
+
+		<iframe src="#/userAdmin/*" name="myIframe" frameborder="0" border="0"
+			margin-top="0" cellspacing="0" scrolling="auto"
+			style="border-style: none; width: 600px; height: 400px;"></iframe>
+	</div> -->
+	<div style="float: right; width: 58%;">
+	
+	<script type = "text/ng-template" id = "allUsers.html">
+            <h2> Add Student </h2>
+            {{message}}
+         </script>
+	</div>
+
+</body>

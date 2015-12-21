@@ -1,0 +1,92 @@
+<div style="width: 100%;">
+	<div style="float: left; width:48%;">
+		<div>
+			<frameset rows="10%,20%">
+				<img src = "modules/login/images/SOI1234.png" alt="Soi Login"
+					style="width: 580px; height: 400px;">
+			</frameset>
+		</div>
+	</div>
+
+	<div style="float: right; width: 36%; margin-left: 30px;">
+
+
+		<form name="form" ng-submit="login()" role="form">
+		
+			<div ng-show="error" class="alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  				<span class="sr-only">Error:</span>	
+  				{{error}}
+			</div>
+
+				<div class="panel-heading">
+					
+					<!-- <h1><font size="6"><strong>Service On Integrator Portal</strong></font></h1> -->
+					<img src="image/tab-Image/SOIportal.png" alt="Soi Portal"
+					style="width: 385px; height: 45px;">	
+					<h2>Version 13.0.21</h2>				
+				</div>
+				
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="username">Username:</label> <i class="fa fa-key"></i> <input
+							type="text" name="username" id="username" class="form-control"
+							ng-model="username" required placeholder="Enter Username" /> <span
+							ng-show="form.username.$dirty && form.username.$error.required"
+							class="help-block">Username is required</span>
+					</div>
+					
+					<div class="form-group">
+						<label for="password">Password:</label> <i class="fa fa-lock"></i>
+						<input type="password" name="password" id="password"
+							class="form-control" ng-model="password" required
+							placeholder="Enter Password" /> <span
+							ng-show="form.password.$dirty && form.password.$error.required"
+							class="help-block">Password is required</span>
+					</div>
+					
+					
+					
+					<div class="form-group">
+					<label for="singleSelect"> Domain: </label><i class="fa fa-key"></i><br> 
+					<select
+						name="singleSelect" ng-model="data.singleSelect">
+						<option value="">--------Select Domain--------</option>
+						<option value="option-1">STSOI131E056</option>
+						<option value="option-2">STSOI131E057</option>
+					</select>
+					</div>
+					<br>
+					<div class="form-actions">
+						<button type="submit" ng-disabled="form.$invalid || dataLoading"
+							class="btn btn-danger">
+							<font color="#000000">Login</font>
+						</button>
+						<img ng-if="dataLoading"
+							src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+					</div>
+				</div>
+		
+	</form>
+	</div>
+	</div>
+
+	
+	
+
+<style>
+@font-face {
+	font-family: EricssonCapitalTT;
+	src: url('EricssonCapitalTT.ttf');
+}
+
+@font-face {
+	font-family: Ericsson;
+	src: url('Ericsson.ttf');
+}
+
+h2 {
+	font-family: EricssonCapitalTT;
+	color: #00004d;
+}
+</style> 
